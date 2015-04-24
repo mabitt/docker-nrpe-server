@@ -1,7 +1,7 @@
 # docker-nrpe-server
 nagios-nrpe-server running on docker
 
-- Use env var to sett your nagios server. -e "NAGIOS_SERVER=10.0.0.1"
+- Use env var to set your nagios server. -e "NAGIOS_SERVER=10.0.0.1"
 - Mount your own config files into the container. -v /srv/nrpe-server/nrpe.d:/etc/nagios/nrpe.d
 
 For example:
