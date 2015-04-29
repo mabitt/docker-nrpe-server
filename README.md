@@ -7,7 +7,7 @@ nagios-nrpe-server running on docker
 For example:
 
 ```shell
-docker run -d --name nrpe-server -p 5666:5666 -e "NAGIOS_SERVER=10.0.0.1" mabitt/docker-nrpe-server
+docker run -d --name nrpe-server -p 5666:5666 -e "NAGIOS_SERVER=10.0.0.1" mabitt/nrpe-server
 ```
 
 included in /etc/nagios/nrpe_local.cfg
