@@ -85,10 +85,10 @@ get_docker
 
 NUMCRIT=$((${NUMNODE}/2))
 
-if [ "${NUMCONT}" -le  "${NUMCRIT}" ] ;  then
+if [ "${NUMCONT}" -lt  "${NUMCRIT}" ] ;  then
     echo "CRITICAL - ${CONTNAME} have ${NUMCONT} replicas running under ${NUMNODE} nodes"
     exit $ST_CR
-elif [ "${NUMCONT}" -le  "${NUMNODE}" ] ;  then
+elif [ "${NUMCONT}" -lt  "${NUMNODE}" ] ;  then
     echo "WARNING - ${CONTNAME} have ${NUMCONT} replicas running under ${NUMNODE} nodes"
     exit $ST_WR
 else
