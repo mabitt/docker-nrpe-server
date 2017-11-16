@@ -31,3 +31,5 @@ root    ALL=(ALL:ALL) ALL
 
 nagios    ALL=(ALL:ALL)  NOPASSWD: /usr/lib/nagios/plugins/check_docker_name.sh *
 nagios    ALL=(ALL:ALL)  NOPASSWD: /usr/lib/nagios/plugins/check_docker_service.sh *
+nagios    ALL=(ALL:ALL)  NOPASSWD: /usr/lib/nagios/plugins/check_docker_service_global.sh *
+nagios    ALL=(ALL:ALL)  NOPASSWD: /usr/lib/nagios/plugins/check_docker_service_replicas.sh *
