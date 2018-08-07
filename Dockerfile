@@ -1,5 +1,8 @@
 FROM ubuntu:trusty
-MAINTAINER Marcelo Bittencourt <mab@mab.net>
+MAINTAINER MAB <mab@mab.net>
+
+# Keep image updated
+ENV REFRESHED_AT 2018-08-07-00-00Z
 
 RUN apt-get update \
     && apt-get install -q -y \
