@@ -1,8 +1,8 @@
-FROM ubuntu:trusty
+FROM ubuntu:20.04
 MAINTAINER MAB <mab@mab.net>
 
 # Keep image updated
-ENV REFRESHED_AT 2018-08-07-00-00Z
+ENV REFRESHED_AT 2021-06-25-00-00Z
 
 RUN apt-get update \
     && apt-get install -q -y \
@@ -13,8 +13,8 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt /tmp/* /var/tmp/*
 
-RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-RUN sudo add-apt-repository \
+RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+RUN add-apt-repository \
     "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
     $(lsb_release -cs) \
     stable"
