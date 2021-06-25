@@ -61,17 +61,11 @@ while test -n "$1"; do
 done
 
 get_args() {
-    if [ -z "${CONTNAME}"  -o -z "${CONTWARN}"  -o -z "${CONTCRIT}" ]
+    if [ -z "${CONTNAME}" ]
     then
         echo "Please adjust your name/warn/crit value!"
         exit $ST_UK
     fi
-    if [ "${CONTWARN}" -lt "${CONTCRIT}" ]
-    then
-        echo "warn value must be greater than or equal to crit value!"
-        exit $ST_UK
-    fi
-
 }
 
 get_docker() {
