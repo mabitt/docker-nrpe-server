@@ -1,8 +1,8 @@
-FROM ubuntu:20.04
+FROM ubuntu:focal
 MAINTAINER MAB <mab@mab.net>
 
 # Keep image updated
-ENV REFRESHED_AT 2021-06-25-00-00Z
+ENV REFRESHED_AT 2021-11-18-00-00Z
 
 RUN apt-get update \
     && apt-get install -q -y \
