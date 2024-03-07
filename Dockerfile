@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM ubuntu:20.04
 MAINTAINER MAB <mab@mab.net>
 
 # Keep image updated
